@@ -1,0 +1,109 @@
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 700px;
+    
+}
+
+input{
+    border: black 1px solid;
+}
+
+#text_in {
+    width:300px;
+}
+#center {
+    margin-top: 50px;
+    width: 400px;
+    display: flex;
+    text-align:center;
+    display: block;
+    justify-content: center;
+}
+.head{
+    width: 100px;
+}
+.keyin{
+    display: flex;
+    width:400px;
+    margin-top:20px;
+}
+
+#title_value,#content_value, #tag_value{
+    width:300px;
+}
+#submit_container{
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    margin-top: 20px;
+    border: solid 1px black;
+    width: 100px;
+}
+
+
+
+#search-friend{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+
+
+.name, .id, .email{
+    margin-bottom: 10px;
+}
+
+.check, .application, .friendIng{
+    width: 100px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+
+.search {
+    margin-top: 50px;
+}
+
+.ok, .no {
+    margin-top: 10px;
+    width:100px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.friend-check{
+    width: 240px;
+    font-size: 20px;
+    border-bottom: grey 2px solid;
+}
+
+#friend-box {
+    width: 230px;
+    font-size: 20px;
+    border-bottom: grey 2px solid;
+}
+
+.nav {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+#booklist {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#classss{
+    margin-bottom: 10px;
+    border: black 1px solid;
+}

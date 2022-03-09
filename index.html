@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id='center'>
+            請輸入資料
+            <div class="keyin">
+                <div class="head" id="title">Title</div>
+                <input id='title_value'></input>
+            </div>
+            <div class="keyin">
+                <div class="head" id="content">Content</div>
+                <input id='content_value'></input>
+            </div>
+            <div class="keyin">
+                <div class="head" id="tag">Tag</div>
+                <div id='tag_value'>
+                    <input name='tag' type="radio" id='Beauty' value='Beauty'>
+                    <label for="Beauty">Beauty</label>
+                    <input name='tag' type="radio" id='Gossiping' value='Gossiping'>
+                    <label for="Gossiping">Gossiping</label>
+                    <input name='tag' type="radio" id='SchoolLife' value='SchoolLife'>
+                    <label for="SchoolLife">SchoolLife</label>
+                </div>
+            </div>
+            <div id='submit_container'>
+                <div id='submit'>Submit</div>
+            </div>
+        </div>
+        <div id='booklist'>
+            <div>檢索文章</div>
+
+            <div>作者
+                <input type="text" id='author_id'>
+            </div>
+            <div>文章類別
+                <input type="radio" name='article-type' id='article-beauty' value='Beauty'>
+                <label for='article-beauty'>Beauty</label>
+                <input type="radio" name='article-type' id='article-gossiping' value='Gossiping'>
+                <label for='article-gossiping'>Gossiping</label>
+                <input type="radio" name='article-type' id='article-schoollife' value='SchoolLife'>
+                <label for='article-schoollife'>SchoolLife</label>
+                <input type="radio" name='article-type' id='article-all' value='' checked>
+                <label for='article-all'>All</label>
+                <button type="submit" id='article-search-button'>搜尋</button>
+            </div>
+            <div id='search-content'>
+            </div>
+        </div>
+
+    </div>
+    <div class="nav">
+        <div class="search">
+            <input id='search-friend' type="text" placeholder="find friends">
+            <div id='not-friend-yet'></div>
+        </div>
+        <div>
+            <div class='friend-check'>好友邀請</div>
+            <div class='friend-check-box'></div>
+        </div>
+
+        <div class="friend-list">
+            <div id='friend-box'>好友名單</div>
+            <div id='friends'></div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script type='module' src="script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+</html>
